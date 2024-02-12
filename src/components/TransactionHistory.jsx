@@ -1,4 +1,5 @@
 export const TransactionHistory = ({ items: { id, type, amount, currency } }) => {
+    return (
 <table>
   <thead>
     <tr>
@@ -9,6 +10,7 @@ export const TransactionHistory = ({ items: { id, type, amount, currency } }) =>
   </thead>
 
     
+    
   <tbody>
     <tr>
       <td>{type}</td>
@@ -16,5 +18,5 @@ export const TransactionHistory = ({ items: { id, type, amount, currency } }) =>
       <td>{currency}</td>
      </tr>
 </tbody>
-</table>
+</table>)
 } 
