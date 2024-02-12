@@ -1,4 +1,4 @@
-export const TransactionHistory = ({ items: { id, type, amount, currency } }) => {
+ const TransactionHistory = ({ items: { type, amount, currency } }) => {
     return (
 <table>
   <thead>
@@ -20,3 +20,5 @@ export const TransactionHistory = ({ items: { id, type, amount, currency } }) =>
 </tbody>
 </table>)
 } 
+
+export default TransactionHistory;
