@@ -1,6 +1,6 @@
 
 
-export const FriendListItem = ({ friend: { avatar, name, isOnline } }) => {
+export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
         <div>
             <img src={avatar} alt={name} width="48" />
