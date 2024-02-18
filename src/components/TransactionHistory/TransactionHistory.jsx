@@ -1,11 +1,13 @@
+import css from "./TransactionHistory.module.css"
+
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={css.container}>
       <thead>
         <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.head}>Type</th>
+          <th className={css.head}>Amount</th>
+          <th className={css.head}>Currency</th>
         </tr>
       </thead>
 
@@ -13,7 +15,7 @@ const TransactionHistory = ({ items }) => {
       <tbody>
         {items.map(item => (
           <tr key={item.id}>
-            <td>{item.type}</td>
+            <td>{item.type.charAt(0).toUpperCase() + item.type.slice(1)}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
           </tr>
