@@ -5,7 +5,6 @@
   border: 3px solid black;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -44,16 +43,30 @@
 .list {
   display: flex;
   width: 100%;
-  flex-basis: calc(100% / 3);
+  border-bottom: 3px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .item {
   background-color: rgb(197, 188, 188);
-  border: 3px solid grey;
+  border-top: 3px solid grey;
   flex-direction: row;
   justify-content: space-between;
   flex: 1;
   align-items: center;
+}
+
+.item:not(:last-child) {
+  border-right: 3px solid grey;
+}
+
+.item:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.item:first-child {
+  border-bottom-left-radius: 10px;
 }
 
 .elementsItem {
@@ -75,4 +88,8 @@
   text-align: center;
   letter-spacing: 0.02em;
   padding-bottom: 10px;
+}
+
+.container {
+  border-radius: 10px;
 }

@@ -1,4 +1,12 @@
+.container {
+  margin-bottom: 50px;
+}
+
 .head {
   background-color: rgb(32, 24, 24);
   color: #fff;
+}
+
+.line:nth-child(even) {
+  background-color: #c0c0c0;
 }
